@@ -32,6 +32,9 @@ describe('app', function () {
     var carPortal;
     describe('CarPortal', function () {
         carPortal = new app.CarPortal();
+        afterEach(function () {
+            carPortal.logout();
+        });
 <<<<<<< HEAD
         afterEach(function () {
             carPortal.logout();
