@@ -50,6 +50,12 @@ describe('app', function () {
 =======
 >>>>>>> bd2d694... add CarPortal test
         it('should set username to maria and password to qwerty when login is call', function () {
+<<<<<<< HEAD
+            console.log('Piotr Jarosz');
+            console.log(carPortal.credentials);
+=======
+            console.log(carPortal.credentials);
+>>>>>>> 65d3bb3... add credential log to CarPortal test
             carPortal.login('maria', 'qwerty');
             expect(carPortal.credentials).toEqual({username: 'maria', password: 'qwerty'});
         });
