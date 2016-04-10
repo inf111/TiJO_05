@@ -32,22 +32,32 @@ describe('app', function () {
     var carPortal;
     describe('CarPortal', function () {
         carPortal = new app.CarPortal();
+<<<<<<< HEAD
         afterEach(function () {
             carPortal.logout();
         });
+=======
+
+>>>>>>> bd2d694... add CarPortal test
         it('should set username to john and password to 12345 when login is call', function () {
             carPortal.login('john', '12345');
             expect(carPortal.credentials).toEqual({username: 'john', password: '12345'});
         });
+<<<<<<< HEAD
         it('should clean credentials after each it', function () {
             expect(carPortal.credentials).toEqual({});
         });
+=======
+>>>>>>> bd2d694... add CarPortal test
         it('should set username to maria and password to qwerty when login is call', function () {
             carPortal.login('maria', 'qwerty');
             expect(carPortal.credentials).toEqual({username: 'maria', password: 'qwerty'});
         });
+<<<<<<< HEAD
         it('should clean credentials after each it', function () {
             expect(carPortal.credentials).toEqual({});
         });
+=======
+>>>>>>> bd2d694... add CarPortal test
     });
 });
